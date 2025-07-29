@@ -1,0 +1,12 @@
+pandas
+praw
+nltk
+numpy
+scikit-learn
+imblearn
+python-dotenv
+textblob
+spacy==3.7.2
+joblib
+lightgbm
+flask
