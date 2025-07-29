@@ -26,15 +26,12 @@ from sklearn.utils import class_weight
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 
-# --- Initial Setup ---
 load_dotenv()
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
 nltk.download('wordnet', quiet=True)
 os.makedirs("data", exist_ok=True)
 os.makedirs("models", exist_ok=True)
-
-# --- Step 1 & 2: Data Collection and Preprocessing ---
 
 def setup_reddit_api():
     return praw.Reddit(
